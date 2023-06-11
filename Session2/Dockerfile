@@ -1,5 +1,6 @@
 FROM python:3.7.10-slim-buster
-
+# Copy command is to have all the files as part of the image
+Copy . .
 RUN pip3 install \
     torch==1.9.0+cpu \
     torchvision==0.10.0+cpu \
